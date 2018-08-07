@@ -1,1 +1,4 @@
-
+<style>   
+ruby.sample1 {ruby-align:auto;}   
+</style>
+<ruby class="sample1">{2}<rt>{1}</rt></ruby>
