@@ -23,7 +23,7 @@
 
 参数数量: 1
 
-## infobox
+## infobox(信息框)
 使用方法: \[infobox]内容\[/infobox]
 
 展示一个框框，右侧带有图标"info.gif"，可显示一段信息。
