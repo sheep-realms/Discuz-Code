@@ -1,0 +1,6 @@
+<head>
+<meta http-equiv="refresh" content="10; url={1}">
+</head>
+重定向: <a href="{1}">{1}</a><br />
+10秒后自动跳转...
+<hr />
