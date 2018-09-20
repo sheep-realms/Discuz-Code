@@ -1,5 +1,5 @@
 <table border="1" frame=hisdes rules=none width=100% bordercolor=#c7c7c7 bgcolor=#dddddd>
-<tr><td width=5px></td><td width=85%><b>{1}</b></td><td align=right><input type="button" value="显示/隐藏" onClick="toggle('hide{1}')"/></td></tr>
+<tr><td width=5px></td><td width=85%><b>{1}</b></td><td align=right><input type="button" value="显示/隐藏"/></td></tr>
 </table>
 <table border="1" frame=hisdes rules=none bordercolor=#c7c7c7 bgcolor=#f7f7f7>
 <tr><td width=5px></td><td width=98%>{1}</td><td width=5px></td></tr>
@@ -8,6 +8,13 @@
       var tb = document.currentScript.parentElement;
       if(tb.style.display=='none') tb.style.display='block';
       else tb.style.display='none';
+      
+      var button = document.currentScript.parentElement.previousElementSibling.getElementByTagName("input").item(0);
+      button.element = document.currentScript.parentElement;
+      button.onclick = function(){
+        if(button.element.style.display=='none') button.element.style.display='block';
+        else button.element.style.display='none';
+      }
     })();
 </script>
 </table>
